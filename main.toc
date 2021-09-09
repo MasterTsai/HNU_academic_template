@@ -1,0 +1,5 @@
+\beamer@sectionintoc {1}{Basics}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Blocks1}{4}{0}{1}
+\beamer@subsectionintoc {1}{2}{Blocks2}{5}{0}{1}
+\beamer@sectionintoc {2}{Pause test}{6}{0}{2}
+\beamer@sectionintoc {3}{Item}{10}{0}{3}

@@ -1,0 +1,141 @@
+% !TEX encoding = UTF-8 Unicode
+\documentclass[10pt,aspectratio=169]{beamer} % 169 为4:3比例
+\setbeamercovered{transparent=20}
+\usetheme[
+%  showheader,
+%  red,
+%  purple,
+%  gray,
+%  lightBlue,
+  colorblocks,
+%  noframetitlerule,
+]{scnu}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lipsum}
+\providecommand{\lishu}{\CJKfamily{song}}
+\usepackage{tikz}
+\usetikzlibrary{fadings}
+%\setbeamertemplate{sections/subsections in toc}[ball]
+\usepackage{xeCJK}
+\usepackage{listings}
+\usepackage{caption}
+\usepackage{subcaption}
+\usefonttheme{professionalfonts}
+\def\mathfamilydefault{\rmdefault}
+\usepackage{amsmath}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{bm}
+\setbeamertemplate{section in toc}{\hspace*{1em}\inserttocsectionnumber.~\inserttocsection\par}
+\setbeamertemplate{subsection in toc}{\hspace*{2em}\inserttocsectionnumber.\inserttocsubsectionnumber.~\inserttocsubsection\par}
+\setbeamerfont{subsection in toc}{size=\large} % 设置目录样式
+%---------------------------------------------------------------------
+%在章节开始前放映章节目录
+\AtBeginSection[]{%
+\begin{frame}%
+\frametitle{Outline}%
+\textbf{\tableofcontents[currentsection]} %
+	\end{frame}%
+}
+%--------------------------------------------------------------------
+% 在子章节开始前放映子章节目录
+%\AtBeginSubsection[]{%
+%	\begin{frame}%
+%		\frametitle{Outline}%
+%		\textbf{\tableofcontents[currentsection, currentsubsection]} %
+%	\end{frame}%
+%}
+%===================================================================
+\title{\href{https://www.econometricsociety.org/publications/econometrica/2021/03/01/quantile-factor-models}{Quantile Factor Models}}
+\subtitle{Theory and Application}   % 子标题
+\author[Xiao Cai]{蔡骁}
+\mail{\href{mailto:iamcaixiao@hnu.edu.cn}{iamcaixiao@hnu.edu.cn}}
+\institute[Hunan University]{\normalsize College of Finance and Statistics, \\Hunan University}
+\date{\today}
+\titlegraphic[width=3cm]{logo_hnu.jpg}{}  % 在首页显示校徽
+%===================================================================
+\begin{document}
+
+\maketitle	
+
+\begin{frame}
+	\frametitle{Outline}
+	\textbf{\tableofcontents}
+\end{frame}	
+
+%============================FRAME===========================
+\section{Basics}
+\subsection{Blocks1}
+\begin{frame}[c]{Blocks1}
+	
+The blocks are shown below
+\begin{block}{Regular Block}
+	Content of a regular block
+\end{block}
+
+\begin{exampleblock}{Example Block}
+	Content of an example block
+\end{exampleblock}
+
+\begin{alertblock}{Alert block}
+	Content of an alert block
+\end{alertblock}
+
+\end{frame}	
+%==================================================
+\subsection{Blocks2}
+\begin{frame}[c]{Blocks2}
+	
+The blocks are shown below
+\begin{block}{Regular Block}
+	Content of a regular block
+\end{block}
+
+\begin{exampleblock}{Example Block}
+	Content of an example block
+\end{exampleblock}
+
+\begin{alertblock}{Alert block}
+	Content of an alert block
+\end{alertblock}
+
+\end{frame}	
+
+
+%==================================================
+\section{Pause test}
+\begin{frame}{Pause test}
+\pause
+Hello
+\pause[3]
+暂停
+\end{frame}
+%=======================================================================
+\section{Item}
+\begin{frame}{item}
+\begin{itemize}[<+->]
+	\item 1\\
+	\begin{itemize}
+		\item 2
+	\end{itemize}
+\end{itemize}
+\begin{quotation}
+	123
+\end{quotation}
+\end{frame}
+%=======================================================================
+% Thank you page
+\beamertemplateshadingbackground{structure.fg!30}{structure.fg} % 两层设置渐变色
+\begin{frame}%[plain]
+	\vfill
+	\centering
+	{
+		\centering \Huge \color{white}End
+	}
+	\vfill
+\end{frame}
+%===============================================================
+\end{document}
